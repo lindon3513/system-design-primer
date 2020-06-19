@@ -1,0 +1,118 @@
+
+https://leetcode.com/discuss/interview-experience/687776/NDA-Facebook-or-E5-or-Menlo-Park-or-Jun-2020-Offer
+
+
+I told myself I should give back to the LeetCode community if I got an offer, so here I am :-) .
+
+Note: I am not going to list the specific questions I had because of the NDA, but I hope this post will give you a better idea of what the FB interviews are like and how to prepare for them.
+
+Background: I am a Senior Software Engineer at a startup, with 5 years of experience.
+
+The recruiter reached out to me on LinkedIn. I had an initial call with them before the phone screen interview.
+
+Interviews
+Phone Screen (45 min coding question)
+
+Medium tree question + 1 follow-up discussion
+I was able to solve the main question pretty well but couldn’t figure out the follow-up problem. I believe the interviewer initially intended to do the main question only, but since we had some time left, he suggested trying the follow-up.
+Virtual Onsite (5 interviews, 45 min each, and a 45 min break)
+Coding 1
+
+Medium recursion question
+I solved this one quickly with no hints.
+Medium stack question
+I found the right idea pretty quickly but needed a few hints to solve it entirely.
+Coding 2
+
+Hard array question
+I solved this one using a brute force approach, and I couldn’t figure out the optimized solution in time.
+Medium data structure design question
+I didn’t have much time left for this one, so I briefly discussed a suboptimal solution but didn’t get to code it.
+Design 1
+
+System design question, similar to the ones from Gr***ing the Design Interview.
+I was able to lay out the main design and address the deep-dive questions as well (e.g. how to handle bottlenecks, etc.).
+Design 2
+
+Product design question, similar to the system design question, but with more focus on the API, user experience and product delivery.
+I was able to do the overall design as well as speaking about less technical topics (e.g. how can we make the feature a better experience for the end user, how would we release it, etc.).
+Behavioral
+
+Typical behavioral questions regarding teamwork, challenges, etc. I had prepared some stories about previous interesting or challenging projects / situations from my past experience.
+I had some good examples for each of the questions that the interviewer asked.
+Sometimes there is a coding question in this interview, but I didn’t get one.
+Tips for preparing
+
+Identify the common techniques for coding questions
+
+As you do more and more questions, you’ll see that there are some common ways of solving certain types of questions.
+E.g. for array questions, you could use a two-pointer approach, or traverse the array once to create a hashmap of elements to their indexes, or use a sliding window, or build a prefix or suffix array, etc.
+I had a list of techniques that I had encountered in problems and I would review it before my interviews.
+It is better to do a little bit of every type of problem, than a lot of similar problems
+
+In the end, I didn’t do a huge amount of questions (< 100), but I did a lot of many different questions.
+Practice solving questions under a time constraint
+
+FB interviews are 45 min long, and 5-10 min out of these are for you to ask questions. The recruiter will tell you that you should be prepared to solve 2 medium questions in 30-35 min, and it is pretty accurate.
+During my preparation, I would measure how long I would take for solving each question. Initially, I was way too slow (which is expected) but by the end I would be close to doing 1 medium question in 15-20 min.
+This applies to the design and behavioral questions too! I practiced doing a design question under 35 min, and for the behavioral questions, I prepared stories from my experience that would take 3-5 min to discuss at most.
+Use the tools that you’re going to use in the interviews
+
+It’s annoying at first, but really worth it! It will make you more comfortable in the interview and help you go way faster as well.
+During my preparation, I did every single question using CoderPad Sandbox. I would write the code there, then copy-paste it to LC at the very end to run it.
+Same for the design, I practiced doing the design questions using the online whiteboarding tool that I would use in the interview.
+Don’t neglect the design and behavioral interviews
+
+For senior roles, these are the ones that make the difference. I got positive feedback that I was able to go in depth in both these interviews, although I don’t have that many years of experience.
+Even though one of the coding rounds didn’t go great, I still got the offer because I did well in the design and behavioral interviews.
+The bar for the behavioral interview is pretty high for senior roles
+
+Basically, they expect more “interesting” stories from your experience, since you have more years of experience.
+For example if you had a question about a challenging project, try to come up with either a particularly challenging or a pretty unique one. This is where it really helps to prepare these stories in advance.
+Resources I used
+Coding
+
+Theory
+Cracking the Coding Interview book
+Practice
+Cracking the Coding Interview: ~20 questions from the book
+LeetCode: ~50 questions
+HackerRank: ~20 questions
+Design
+
+Theory
+https://github.com/donnemartin/system-design-primer : A great resource if you need to review the basics of system design. Each section has additional articles for further reading that are worth checking out.
+Practice
+Gr***ing the System Design Interview: ~5 questions
+InterviewBit: 5 questions
+Behavioral
+
+I prepared a list of stories regarding challenging projects / situations based on my experience, using the STAR model.
+Appendix - Common techniques
+As I mentioned above, one thing that will help in your preparation is to identify common techniques as you solve problems. Here are some techniques with sample corresponding LeetCode problems. Usually the technique is mentioned in the problem's solution (sometimes several techniques could be used to solve a given problem).
+
+Array questions:
+
+Two-pointers: https://leetcode.com/problems/valid-palindrome/ https://leetcode.com/problems/3sum-smaller/
+Left and right arrays (a.k.a prefix and suffix arrays): https://leetcode.com/problems/product-of-array-except-self/, https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/
+Swapping elements: https://leetcode.com/problems/move-zeroes/, https://leetcode.com/problems/next-permutation/
+String questions:
+
+Sliding window: https://leetcode.com/problems/longest-substring-without-repeating-characters/, https://leetcode.com/problems/minimum-window-substring/, https://leetcode.com/problems/find-all-anagrams-in-a-string/
+Recursion: https://leetcode.com/problems/interleaving-string/, https://leetcode.com/problems/decode-ways/
+"Finding a number/element" questions:
+
+Binary search: https://leetcode.com/problems/search-in-rotated-sorted-array/, https://leetcode.com/problems/first-bad-version/
+Exponential search: https://leetcode.com/problems/divide-two-integers
+Tree / graph questions:
+
+DFS: https://leetcode.com/problems/maximum-depth-of-binary-tree/, https://leetcode.com/problems/number-of-islands/
+BFS: https://leetcode.com/problems/validate-binary-search-tree, https://leetcode.com/problems/rotting-oranges/
+And so on...
+
+I would really encourage you to build your own list, based on the problems you have encountered. It is useful to sort them by type of question.
+Some of these techniques even have a Topic associated with it, that you can filter by when searching for problems in Leetcode.
+
+When you face a new problem, if you can't think of a solution right away, you can go through the techniques you know and see if they apply. Oftentimes, you'll find one that would work for that problem.
+
+I hope this post was helpful and I wish you the best of luck for your job search!
