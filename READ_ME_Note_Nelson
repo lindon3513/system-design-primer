@@ -1,0 +1,49 @@
+=================================================
+07/4/2020:
+Note to bush up system design basics#3 - Approach a problem:
+
+Because everything is a trade-off, estimate the scale when we approach a problem is a must (which axis we expect the system to grow):
+
+Steps To Approach A Problem
+1.Feature expectations ( First 2 mins ):
+Very clear understanding of whats the requirement for the question.
+
+2.Estimations ( 2-5 mins ):
+Estimate the scale required for the system, high level estimates like traffic/storage/bandwidth/memory estimates based on users/queries counts per day, and things of that nature. Single machine or a distributed system? Consistency or Availabity?
+
+3.Design Goals ( 1 mins ):
+Figure out what are the most important goals for the system, prioritize them. Latency system involved and affected our design?
+
+4.Deep dive and discussions ( 20-30 mins ):
+This is an extension of the previous section.
+
+
+=================================================
+06/29/2020:
+Note to bush up system design basics#2 - CAP Theorem
+
+Why CAP matters? Since most distributed systems may see millions of requests in their lifetime, CAP tells us to be cautious: there's a good chance that you'll hit one of these critical conditions, and it's prudent to understand how your system will fail to meet either C or A.
+
+[By far the best introduction]: http://ksat.me/a-plain-english-introduction-to-cap-theorem
+[CAP revisited]: https://robertgreiner.com/cap-theorem-revisited/
+[CAP FAQ]: https://github.com/henryr/cap-faq
+https://stackoverflow.com/questions/12346326/cap-theorem-availability-and-partition-tolerance
+https://codahale.com/you-cant-sacrifice-partition-tolerance/#errata10221010
+
+
+[Why do we choose A over C?]
+*Most real-world systems require substantially less in the way of consistency guarantees than they do in the way of availability guarantees. Even the canonical example of an isolated transaction–a transfer of funds between bank accounts–happens with a 24-hour window of indeterminacy
+*Every failure of availability means lost money. Every failed Google search means fewer ads served and advertisers charged; every item a user can’t add to their shopping cart means fewer items sold; every unprocessed credit charge risks a regulatory fine. The choice of availability over consistency is a business choice, not a technical one.
+
+[Have I 'got around' or 'beaten' the CAP theorem?]
+No. You might have designed a system that is not heavily affected by it. That's good.
+
+=================================================
+06/21/2020:
+Note for myself to bush up system design basics#1:
+
+Because scalability cannot be an after-thought. It requires applications and platforms to be designed with scaling in mind.
+we must carefully inspect along which axis we expect the system to grow, where redundancy is required, and how one should handle heterogeneity in this system
+
+https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html
+https://www.youtube.com/watch?v=-W9F__D3oY4
